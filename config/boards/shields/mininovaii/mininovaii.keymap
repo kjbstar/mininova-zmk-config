@@ -82,14 +82,14 @@
             label = "TAP_DANCE_RESET";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp R>, <&kp R>, <&kp R>, <&kp R>, <&sys_reset R>;
+            bindings = <&kp R>, <&kp R>, <&kp R>, <&kp R>, <&sys_reset>;
         };
         tdb: tap_dance_bootloader {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BOOTLOADER";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp B>, <&kp B>, <&kp B>, <&kp B>, <&bootloader B>;
+            bindings = <&kp B>, <&kp B>, <&kp B>, <&kp B>, <&bootloader>;
         };                
     };
 
@@ -98,10 +98,10 @@
 
         default_layer {
             bindings = <
-    &kp Q      &kp W       &kp E      &tdr R          &kp T      &kp Y     &kp U   &kp I     &kp O     &kp P
+    &kp Q      &kp W       &kp E      &tdr          &kp T      &kp Y     &kp U   &kp I     &kp O     &kp P
     &kp A      &kp S       &kp D      &kp F           &kp G      &kp H     &kp J   &kp K     &kp L
-    &kp Z      &kp X       &kp C      &kp V           &tdb B     &kp N     &kp M   &kp DOT
-    &td0 LSHIFT &mo LOWER   &kp SPACE  &lt RAISE ENTER &kp ENTER
+    &kp Z      &kp X       &kp C      &kp V           &tdb     &kp N     &kp M   &kp DOT
+    &td0 &mo LOWER   &kp SPACE  &lt RAISE ENTER &kp ENTER
             >;
         };
 
