@@ -77,14 +77,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp LSHIFT>;
         };
-        tdr tap_dance_reset {
+        tdr: tap_dance_reset {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_RESET";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp R>, <&kp R>, <&kp R>, <&kp R>, <&sys_reset R>;
         };
-        tdb tap_dance_bootloader {
+        tdb: tap_dance_bootloader {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_BOOTLOADER";
             #binding-cells = <0>;
